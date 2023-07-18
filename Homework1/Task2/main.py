@@ -5,7 +5,7 @@
 
 n = int(input('Введите число'))
 
-iks = n/6
+iks = n//6
 peter = iks
 serg = iks
 kate = 4*iks
@@ -13,6 +13,13 @@ kate = 4*iks
 count_birds = (peter, serg, kate)
 
 print(count_birds)
+
+# n = 50
+#
+# n1 = n // 6
+# n2 = n // 6
+# n3 = (n // 6) * 4
+# print(n1, n3, n2)
 
 
 
