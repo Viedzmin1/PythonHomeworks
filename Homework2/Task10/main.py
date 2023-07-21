@@ -13,16 +13,19 @@ index_0 = 0
 index_1 = 0
 
 
-for _ in range(n-1):
+for current_n in range(n):
     current_n = randint(0, 1)
     print(current_n, end=' ')
     if current_n == 0:
         index_0=+1
-    else:index_1+=1
+        if current_n ==1:
+            index_1+=1
 
 if index_0>index_1:
-    print(index_1)
-else:print(index_0)
+    print(index_1)  
+else:
+    print(index_0)
+
 
 
 

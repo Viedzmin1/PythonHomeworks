@@ -5,23 +5,23 @@
 # Он называет сумму этих чисел S и их произведение P.
 # Помогите Кате отгадать задуманные Петей числа.
 
+
+from random import randint
 summ = int(input('Введите сумму загаданных чисел: '))
 composition = int(input('Введите произведение загаданных чисел: '))
 
 n1 = 1
 n2 = 1
 
-while n1<=1000 and n2<=1000:
-
-    if n1+n2 == summ and n1*n2 == composition:
-        number1 = n1
-        number2 = n2
-
-    else:
-        n1+=1
+for n1 in range(summ):
+    for n2 in range(composition):
+        if n1+n2 == summ and n1*n2 == composition:
+            print(f'Загаданные числа: {n1} и {n2}')
         n2+=1
+    n1+=1
 
-print(n1, n2)
+
+
 
 
 
